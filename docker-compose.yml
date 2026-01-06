@@ -4,7 +4,7 @@ services:
     build: .
     container_name: monblog-webb
     ports:
-      - "8080:80"     # http://localhost:8080 -> Apache dans le conteneur
+      - "8082:80"     # http://localhost:8080 -> Apache dans le conteneur
     volumes:
       - .:/var/www/html   # pratique en développement, synchronise ton code
     depends_on:
