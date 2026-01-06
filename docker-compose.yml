@@ -2,7 +2,7 @@
 services:
   web:
     build: .
-    container_name: monblog-web
+    container_name: monblog-webb
     ports:
       - "8080:80"     # http://localhost:8080 -> Apache dans le conteneur
     volumes:
@@ -12,7 +12,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: monblog-db
+    container_name: monblog-dbb
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: monblog
