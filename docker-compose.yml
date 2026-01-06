@@ -4,7 +4,7 @@ services:
     build: .
     container_name: monblog-webb
     ports:
-      - "8082:80"     # http://localhost:8080 -> Apache dans le conteneur
+      - "8083:80"     # http://localhost:8083 -> Apache dans le conteneur
     volumes:
       - .:/var/www/html   # pratique en développement, synchronise ton code
     depends_on:
@@ -19,7 +19,7 @@ services:
       MYSQL_USER: bloguser
       MYSQL_PASSWORD: blogpass
     ports:
-      - "3307:3306"       # si tu veux te connecter depuis ton host (facultatif)
+      - "3309:3306"       # si tu veux te connecter depuis ton host (facultatif)
     volumes:
       - db_data:/var/lib/mysql
 
